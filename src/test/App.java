@@ -14,23 +14,19 @@ public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		RepertoireCoursFinance cours = new RepertoireCoursFinance("repertoireCoursFinances.csv");
-		//System.out.println(cours.getListeCours());
-		
-		//System.out.println(cours.obtenirNbCours());
-		
+		// System.out.println(cours.getListeCours());
+
+		// System.out.println(cours.obtenirNbCours());
+
 		List<CoursFinance> listeCoursParTitre = new ArrayList<>();
-		
+
 		listeCoursParTitre = cours.rechercherParEvaluation(5, true);
 		System.out.println(listeCoursParTitre.size());
-		
+
 		listeCoursParTitre.stream()
-		              .forEach(cour->System.out.println(cour));
-		
-		
-		
-		
+				.forEach(cour -> System.out.println(cour));
 
 	}
 
